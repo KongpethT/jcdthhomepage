@@ -1,0 +1,36 @@
+section div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section span:hover {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+
+section p {
+    margin-top: 10px;
+}
+
+.card-text a {
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: green;
+    font-weight: 600;
+}
+
+.card-text a:hover {
+    filter: contrast(50%);
+    color: brown;
+}
+
+.hiden {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    #p1 {
+        display: none;
+    }
+}

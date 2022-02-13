@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./navbar";
+import { Switch, Route, Redirect } from 'react-router-dom'
+import Home from "./Home";
+import Borad from "./Board";
+import Contact from "./Contact";
+import MediaOffer from "./MeditOffer";
+import Footer from "./Footer";
+import { useState } from "react";
 
 function App() {
+  const app = '/'
+  const home = "/home"
+  const board = "/board"
+  const contact = "/contact"
+  const mediaOffer = "/mediaOffer"
+  const [getHome, setHome] = useState(true)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar page={setHome} />
+      <Switch>
+        {(getHome === true) ? <Route path={app}><Home page={setHome}/><Redirect to='/home' /></Route> : null}
+        <Route path={home}><Home page={setHome}/></Route>
+        <Route path={board}><Borad /></Route>
+        <Route path={contact}><Contact /></Route>
+        <Route path={mediaOffer}><MediaOffer /></Route>
+      </Switch>
+      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;

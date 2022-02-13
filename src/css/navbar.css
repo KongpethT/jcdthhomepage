@@ -1,0 +1,14 @@
+nav li {
+    border-bottom: 1px solid transparent;
+    font-size: 11px;
+    
+}
+nav li:hover {
+    border-bottom: 1px solid white;
+    filter: contrast(80%);
+}
+
+
+nav ul:hover {
+    cursor: pointer;
+}
