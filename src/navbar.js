@@ -1,7 +1,8 @@
 import "./css/navbar.css"
 import { items } from "./config/env"
 import logo from './medias/image/logojcdsite-220x95.png'
-import icon from './medias/image/icon_sfEn.png'
+import iconA from './medias/image/icon_apTh.png'
+import iconB from './medias/image/icon_apEn.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
@@ -11,12 +12,14 @@ const Navbar = (props) => {
     const homeEn = 'HOME'
     const contactTh = 'ผู้ติดต่อ'
     const contactEn = 'CONTACTS'
-    const mediaOfferA = 'AIRPORT'
-    const mediaOfferB = 'MEDIA OFFER'
+    const mediaOfferA = 'ข้อเสนอสือโฆษณา'
+    const mediaOfferB = 'AIRPORT'
+    const mediaOfferC = 'AIRPORT'
+    const mediaOfferD = 'MEDIA OFFER'
     return (
         <nav className="navbar navbar-expand-lg navbar-light mb-5 " style={{ bgColor }} >
             <div className="container-fluid" >
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt="logo" />
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -41,7 +44,12 @@ const Navbar = (props) => {
                         </li>
                         <li className="nav-item">
                             <center >
-                                < Link onClick={() => { page(false) }} to="/mediaOffer" className="nav-link text-light fs-6 "> {mediaOfferA} < br /> {mediaOfferB} < br /> < img src={icon} alt="icon"/></Link >
+                                < Link onClick={() => { page(false) }} to="/mediaOfferA" className="nav-link text-light fs-6 "> {mediaOfferA} < br /> {mediaOfferB} < br /> < img src={iconA} alt="icon" /></Link >
+                            </center>
+                        </li>
+                        <li className="nav-item">
+                            <center >
+                                < Link onClick={() => { page(false) }} to="/mediaOfferB" className="nav-link text-light fs-6 "> {mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></Link >
                             </center>
                         </li>
                     </ul>

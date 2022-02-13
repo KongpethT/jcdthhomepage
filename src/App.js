@@ -3,7 +3,8 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Home from "./Home";
 import Borad from "./Board";
 import Contact from "./Contact";
-import MediaOffer from "./MeditOffer";
+import MediaOfferTh from "./MediaOfferTh";
+import MediaOfferEn from "./MedaiOfferEn";
 import Footer from "./Footer";
 import { useState } from "react";
 
@@ -12,7 +13,8 @@ function App() {
   const home = "/home"
   const board = "/board"
   const contact = "/contact"
-  const mediaOffer = "/mediaOffer"
+  const mediaOfferTh = "/mediaOfferA"
+  const mediaOfferEn = "/mediaOfferB"
   const [getHome, setHome] = useState(true)
   return (
     <div className="App">
@@ -22,7 +24,8 @@ function App() {
         <Route path={home}><Home page={setHome}/></Route>
         <Route path={board}><Borad /></Route>
         <Route path={contact}><Contact /></Route>
-        <Route path={mediaOffer}><MediaOffer /></Route>
+        <Route path={mediaOfferTh}><MediaOfferTh /></Route>
+        <Route path={mediaOfferEn}><MediaOfferEn /></Route>
       </Switch>
       <Footer />
     </div>

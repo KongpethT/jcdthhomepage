@@ -1,15 +1,13 @@
 import './css/board.css'
-import { items } from './config/env'
-import { useState } from 'react';
-const Borad = () => {
+const MediaOfferEn = () => {
     let myImg = []
-    const num = 13;
+    const num = 93;
     const pageStart = 0
     const pageEnd = (num - 2)
     const pageOver = (num - 1)
 
     for (let i = 0; i < num; i++) {
-        myImg[i] = `/BackgroundCompany/Slide${i + 1}.JPG`
+        myImg[i] = `/MediaOffer2022Website/Slide${i + 1}.JPG`
     }
     return (
         <section style={{ margin: '0 auto' }}>
@@ -34,4 +32,4 @@ const Borad = () => {
     )
 }
 
-export default Borad
+export default MediaOfferEn
