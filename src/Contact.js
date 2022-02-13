@@ -15,7 +15,7 @@ const Contact = () => {
         }
     }
     return (
-        <section>
+        <section className='contact'>
             <div className="alert alert-secondary active" role="alert">
                 <p id="p1">ติดต่อ – Contacts</p>
                 <p>JCDecaux Thailand ติดต่อ – Contacts <span onClick={() => { changeLanguage('th') }}>TH</span> / <span onClick={() => { changeLanguage('en') }}>EN</span></p>

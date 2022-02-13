@@ -12,25 +12,19 @@ const Borad = () => {
         myImg[i] = `/BackgroundCompany/Slide${i + 1}.JPG`
     }
     return (
-        <section style={{ margin: '0 auto' }}>
-            <div className="slider">
-                <ul>
-                    {myImg.map((row, index) => {
-                        return (
-                            <li key={index} id={`no-js-slider-${index}`} className="slide">
-                                <img src={row} alt='image' />
-                                <a className="prev" href={(index === pageStart) ? `#no-js-slider-${pageEnd}` : `#no-js-slider-${parseInt(index - 1)}`}>prev</a>
-                                <a className="next" href={(index === pageEnd | index === pageOver) ? `#no-js-slider-0` : `#no-js-slider-${parseInt(index + 1)}`}>next</a>
-                            </li>
-                        )
-                    })}
-                </ul>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </div>
-        </section >
+        <section className='board'>
+                    <div className="slider">
+                            {myImg.map((row, index) => {
+                                return (
+                                    <div key={index} id={`no-js-slider-${index}`} className="slide">
+                                        <img src={row} alt='image' />
+                                        <a className="prev" href={(index === pageStart) ? `#no-js-slider-${pageEnd}` : `#no-js-slider-${parseInt(index - 1)}`}>prev</a>
+                                        <a className="next" href={(index === pageEnd | index === pageOver) ? `#no-js-slider-0` : `#no-js-slider-${parseInt(index + 1)}`}>next</a>
+                                    </div>
+                                )
+                            })}
+                    </div>
+        </section>
     )
 }
 

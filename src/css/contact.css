@@ -1,3 +1,7 @@
+.contact {
+    height: calc(100vh - 240px);
+ }
+
 section div {
     display: flex;
     justify-content: space-between;

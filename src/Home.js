@@ -8,13 +8,12 @@ import { Link } from 'react-router-dom'
 const Home = (props) => {
     const { page } = props
     return (
-
-        <section className='mt-5'>
+        <section className='home'>
             <article className="row">
                 <div className="col-3 item-1">
                     <div className="row ">
-                        <div className='my-1 mx-1 col justify-content-end'><Link onClick={() => { page(false) }} to='/board'><img src={page1} alt="img"/></Link></div>
-                        <div className='my-1 mx-1 col justify-content-end'><a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/our-presence'><img src={page2} alt="img"/></a></div>
+                        <div className='my-1 mx-1 col justify-content-end'><Link onClick={() => { page(false) }} to='/board'><img src={page1} alt="img" /></Link></div>
+                        <div className='my-1 mx-1 col justify-content-end'><a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/our-presence'><img src={page2} alt="img" /></a></div>
                     </div>
                 </div>
                 <div className="col-6 item-2">
@@ -27,8 +26,8 @@ const Home = (props) => {
                 </div>
                 <div className="col-3 item-3">
                     <div className="row">
-                        <div className='my-1 mx-1 col justify-content-start'><a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/'><img src={page3} alt="img"/></a></div>
-                        <div className='my-1 mx-1  col justify-content-start'><a target="_blank" rel="noreferrer noopener"  href='https://www.jcdecaux.com/about-us#aboutjcdecaux'><img src={page4} alt="img"/></a></div>
+                        <div className='my-1 mx-1 col justify-content-start'><a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/'><img src={page3} alt="img" /></a></div>
+                        <div className='my-1 mx-1  col justify-content-start'><a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/about-us#aboutjcdecaux'><img src={page4} alt="img" /></a></div>
                     </div>
                 </div>
             </article>

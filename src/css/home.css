@@ -1,56 +1,64 @@
-.item-3 img {
+.home {
+   height: calc(100vh - 240px);
+}
+
+.home article {
+    margin-left: 0px;
+}
+
+.home .item-3 img {
     max-width: 220px;
 }
 
-.item-1 img {
+.home .item-1 img {
     max-width: 220px;
 }
 
 @media only screen and (max-width: 991px) {
-    article {
+    .home article {
         margin: 0 auto;
-        width: 100%;
+        width : 100%;
     }
 
-    .item-1 {
-        display: flex;
-        flex-direction: column;
+    .home .item-1 {
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
-        align-items: center;
-        flex: 2 100%;
-        order: 2;
+        align-items    : center;
+        flex           : 2 100%;
+        order          : 2;
     }
 
-    .item-2 {
-        display: flex;
-        flex-direction: column;
+    .home .item-2 {
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex: 1 100%;
-        order: 1;
-        margin-bottom: 10px;
+        align-items    : center;
+        width          : 100%;
+        flex           : 1 100%;
+        order          : 1;
+        margin-bottom  : 10px;
     }
 
-    .item-3 {
-        display: flex;
-        flex-direction: column;
+    .home .item-3 {
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
-        align-items: center;
-        flex: 3 100%;
-        order: 3;
+        align-items    : center;
+        flex           : 3 100%;
+        order          : 3;
     }
 }
 
 @media only screen and (max-width: 764px) {
-    article img {
+    .home article img {
         display: block;
-        width: 100%;
+        width  : 100%;
     }
 
-    article vidio {
+    .home article vidio {
         display: block;
-        width: 100%;
+        width  : 100%;
     }
 
 }
