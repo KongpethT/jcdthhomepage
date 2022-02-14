@@ -17,7 +17,6 @@ function App() {
       <Navbar page={setHome} />
       <Switch>
         <Route path="/:id" children={<Child />} />
-        <Route component='https://www.ibm.com' />
         <Route path='/'><Home page={setHome} /><Redirect to='/home' /></Route>
       </Switch>
       <Footer />
