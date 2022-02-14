@@ -12,7 +12,7 @@ const Home = (props) => {
             <article className="row">
                 <div className="col-3 item-1">
                     <div className="row ">
-                        <div className='my-1 mx-1 col justify-content-end'><Link onClick={() => { page(false) }} to='/board'><img src={page1} alt="img" /></Link></div>
+                        <div className='my-1 mx-1 col justify-content-end'><Link to='/board'><img src={page1} alt="img" /></Link></div>
                         <div className='my-1 mx-1 col justify-content-end'><a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/our-presence'><img src={page2} alt="img" /></a></div>
                     </div>
                 </div>

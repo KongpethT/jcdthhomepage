@@ -1,0 +1,50 @@
+.not-found {
+    width: 100%;
+    height: calc(100vh - 240px);
+}
+
+.not-found div {
+    height: 95%;
+}
+
+.not-found img {
+    margin: 0 auto;
+    width: 95%;
+    opacity: 65%;
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 30ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid green;
+    font-family: monospace;
+    font-size: 2em;
+    color: brown;
+}
+
+.bi-error {
+    font-size: 72px;
+    color: yellow;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
