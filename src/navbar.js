@@ -21,14 +21,15 @@ const Navbar = (props) => {
             <div className="container-fluid" >
                 <img src={logo} alt="logo" />
                 <button
-                    className="navbar-toggler"
+                style={{color:'gray'}}
+                    className="navbar-toggler bg-light"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation" >
-                    <span className="navbar-toggler-icon" > </span>
+                    <span className="navbar-toggler-icon " > </span>
                 </button>
                 <div className="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent" >
                     <ul className="navbar-nav mt-4 ">
