@@ -12,3 +12,9 @@ nav li:hover {
 nav ul:hover {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 764px) {
+    nav {
+        margin-bottom: 0px;
+    }
+}

@@ -17,7 +17,7 @@ const Navbar = (props) => {
     const mediaOfferC = 'AIRPORT'
     const mediaOfferD = 'MEDIA OFFER'
     return (
-        <nav className="navbar navbar-expand-lg navbar-light mb-5 " style={{ bgColor }} >
+        <nav className="navbar navbar-expand-lg navbar-light " style={{ bgColor }} >
             <div className="container-fluid" >
                 <img src={logo} alt="logo" />
                 <button

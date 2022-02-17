@@ -1,66 +1,47 @@
 .board {
-    list-style-type: none;
-    width: 100%;
-    height: calc(100vh - 240px);
-}
-
-.board a.prev,
-.board a.next {
-    height            : 91px;
-    position          : absolute;
-    width             : 43px;
-    top               : 25%;
-    margin-top        : -30px;
-    opacity           : 0.6;
-    text-indent       : -99999px;
-    cursor            : pointer;
-    -webkit-transition: opacity 200ms ease-out;
-}
-
-.board a.prev {
-    margin-left: 0px;
-}
-
-.board a.next {
-    margin-right: 0px;
-}
-
-.board a.prev:hover,
-.board a.next:hover {
-    opacity: 1;
-}
-
-.board .prev {
-    left      : 0;
-    background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -200px 25px;
-}
-
-.board .next {
-    right     : 0;
-    background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
-}
-
-.board .slider {
-    /*height  : calc(100vh - 500px);*/
     position: relative;
+    height: calc(100vh - 18px);
+
 }
 
 .board .slide {
     position: absolute;
-    width   : 100%;
-    height: 95vh;
-    margin: 0 auto;
+    width: 100%;
+
 }
 
-.board .slider .slide:target {
+.board .slide:target {
     z-index: 100;
 }
 
-.board img {
-    width      : 100%;
-    max-height: 640px;
-    height: calc(100vw - 25% );
-    position   : relative;
-  
+.board .slide img {
+    width: 100%;
+    margin: 0 auto;
 }
 
+.prev {
+    position: absolute;
+    background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -200px 25px;
+    left: 0;
+    top: 50%;
+    height: 91px;
+    width: 40px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.next {
+    position: absolute;
+    background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
+    right: 0;
+    top: 50%;
+    height: 91px;
+    width: 40px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.next:hover, .prev:hover {
+    color: #000;
+    opacity: 1;
+}
