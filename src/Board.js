@@ -3,7 +3,7 @@ import './css/board.css'
 //import { useState } from 'react';
 const Borad = () => {
     let myImg = []
-    const num = 13;
+    const num = 12;
     const pageStart = 0
     const pageEnd = (num - 2)
     const pageOver = (num - 1)
