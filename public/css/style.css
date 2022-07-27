@@ -49,15 +49,33 @@
 
 .boxes {
     position: relative;
-    top:-45px;
+    top: -45px;
     padding-left: 45px;
     padding-right: 45px;
-    background-color: var(--danger);
 }
 
-.boxes_container {
+.boxes_view_pdf {
+    margin-top: -45px;
     padding-left: 45px;
     padding-right: 45px;
+    height: 85vh;
+    overflow-y: auto;
+    background-color: var(--light);
+    border: 1px solid var(--light);
+    box-shadow: 0px 0px 4px 4px var(--light);
+
+}
+
+.boxes_view_contact {
+    margin-top: 0px;
+    padding-left: 45px;
+    padding-right: 45px;
+    height: 85vh;
+    overflow-y: auto;
+    background-color: var(--light);
+    border: 1px solid var(--light);
+    box-shadow: 0px 0px 4px 4px var(--light);
+
 }
 
 .center {
@@ -112,6 +130,18 @@
 
 }
 
+.contact-bar {
+    margin-top: -45px;
+    width: 100%;
+    background-color: var(--dark);
+    border: 2px solid var(--dark);
+    border-left: 2px;
+    border-right: 2px;
+    box-shadow: 0px 0px 4px 4px var(--dark);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .contacts-header {
     font-size: 0.9rem;
 }
@@ -152,27 +182,10 @@ nav ul:hover {
     box-shadow: 4px 1px 4px 1px var(--light);
 }
 
-.footer {
-    width: 100%;
-    margin-top: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-#canvas_container {
-    background: #333;
-    text-align: center;
-    border: solid 3px;
-}
-
-.webviewer {
-    width: 100%;
-    height: 100vh;
-}
-
-/*@media screen and (max-height: 340px) {
-    .boxes {
-      background-color: blue;
-      margin-top: 10%;
+@media screen and (max-width: 991px) {
+    .boxes_view_pdf {
+        margin-top: -45px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
-  }*/
+}

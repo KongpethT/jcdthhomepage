@@ -1,27 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import PDFReader from "./components/PDFReader"
 
 const Borad = () => {
-    const reduce_screen_size = 180
-    const [is_height_screen, set_height_screen] = useState(window.innerHeight)
-    window.addEventListener('resize', () => {
-        set_height_screen(window.innerHeight)
-    })
-
     return (
         <div>
-            <div className='boxes'
-                style={{ height: (is_height_screen - reduce_screen_size), overflowY: "auto" }}>
+            <div className='boxes_view_pdf'>
                 <div className="row">
                     <div className="col-12">
-                        <object
-                            className="documents"
-                            trusted="yes"
-                            application="yes"
-                            title="Assembly"
-                            data="/document/BackgroundCompany/board.pdf?#view=FitH&toolbar=0"
-                            width="100%"
-                            height={is_height_screen - reduce_screen_size}>
-                        </object>
+                        <PDFReader data={{ text: '/files/board.pdf' }} />
                     </div>
                 </div>
             </div>

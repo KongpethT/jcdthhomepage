@@ -1,14 +1,10 @@
 //import './css/contact.css'
 import { FaPhone, FaFax } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Contact = () => {
-    const reduce_screen_size = 180
-    const [is_height_screen, set_height_screen] = useState(window.innerHeight)
-    window.addEventListener('resize', () => {
-        set_height_screen(window.innerHeight)
-    })
+    const [is_width_screen, set_width_screen] = useState(window.innerWidth)
     const changeLanguage = (id) => {
         const th = document.getElementById('th')
         const en = document.getElementById('en')
@@ -21,22 +17,32 @@ const Contact = () => {
             th.classList.add('hident')
         }
     }
+    window.addEventListener('resize', () => {
+        set_width_screen(window.innerWidth)
+    })
+    useEffect(() => {
+        const contact_hd = document.getElementById('contact-hd1')
+        if (is_width_screen < 575) {
+            contact_hd.classList.add('hident')
+        } else {
+            contact_hd.classList.remove('hident')
+        }
+    }, [is_width_screen])
     return (
         <div>
-            <div className='boxes'
-                style={{ height: (is_height_screen - reduce_screen_size), overflowY: "auto" }}>
-                <div className="row bg-secondary pt-3">
+            <div className="contact-bar">
+                <div className="row">
                     <div
-                        className="col-3 text-nowrap"
-                        style={{ minWidth: '180px' }}>
-                        <p className="contacts-header">ติดต่อ – Contacts</p>
+                        className="text-nowrap col-sm-2">
+                        <p id='contact-hd1' className="contacts-header">ติดต่อ – Contacts</p>
                     </div>
                     <div
-                        className="col-9 text-nowrap d-flex flex-row justify-content-end">
-                        <p className="contacts-header">JCDecaux Thailand ติดต่อ – Contacts <span className="language" onClick={() => { changeLanguage('th') }}>TH</span> / <span className="language" onClick={() => { changeLanguage('en') }}>EN</span></p>
+                        className="col-sm-10 text-nowrap d-flex flex-row justify-content-end">
+                        <p id='contact-hd2' className="contacts-header">JCDecaux Thailand ติดต่อ – Contacts <span className="language" onClick={() => { changeLanguage('th') }}>TH</span> / <span className="language" onClick={() => { changeLanguage('en') }}>EN</span></p>
                     </div>
                 </div>
-
+            </div>
+            <div className='boxes_view_contact'>
                 <div className="row">
                     <div id="en" className="col-12 bg-light text-secondary mt-5">
                         <div className='px-5 py-5 language-en'>
