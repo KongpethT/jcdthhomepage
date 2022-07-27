@@ -1,12 +1,10 @@
-import "./css/navbar.css"
 import { items } from "./config/env"
 import logo from './medias/image/logojcdsite-220x95.png'
 import iconA from './medias/image/icon_apTh.png'
 import iconB from './medias/image/icon_apEn.png'
-import { Link } from 'react-router-dom'
+import React from "react"
 
-const Navbar = (props) => {
-    const { page } = props
+const Navbar = () => {
     const bgColor = items.getColor.backgroundColor
     const homeTh = 'หน้าหลัก'
     const homeEn = 'HOME'
@@ -16,12 +14,13 @@ const Navbar = (props) => {
     const mediaOfferB = 'AIRPORT'
     const mediaOfferC = 'AIRPORT'
     const mediaOfferD = 'MEDIA OFFER'
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light " style={{ bgColor }} >
             <div className="container-fluid" >
                 <img src={logo} alt="logo" />
                 <button
-                style={{color:'gray'}}
+                    style={{ color: 'gray' }}
                     className="navbar-toggler bg-light"
                     type="button"
                     data-bs-toggle="collapse"
@@ -29,28 +28,28 @@ const Navbar = (props) => {
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation" >
-                    <span className="navbar-toggler-icon " > </span>
+                    <span className="navbar-toggler-icon btn-sm" > </span>
                 </button>
                 <div className="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent" >
-                    <ul className="navbar-nav mt-4 ">
+                    <ul className="navbar-nav mt-4">
                         <li className="nav-item ">
                             <center >
-                                <Link onClick={() => { page(false) }} to="/home" className="nav-link active text-light fs-6" aria-current="page"> {homeTh} < br /> {homeEn} </Link>
+                                <a href="/home" className="nav-link active text-light fs-6" aria-current="page"> {homeTh} < br /> {homeEn} </a>
                             </center>
                         </li>
                         <li className="nav-item">
                             <center >
-                                <Link onClick={() => { page(false) }} to="/contact" className="nav-link text-light fs-6 "> {contactTh} < br /> {contactEn} </Link>
+                                <a href="/contact" className="nav-link text-light fs-6 "> {contactTh} < br /> {contactEn} </a>
                             </center>
                         </li>
                         <li className="nav-item">
                             <center >
-                                < Link onClick={() => { page(false) }} to="/mediaOfferA" className="nav-link text-light fs-6 "> {mediaOfferA} < br /> {mediaOfferB} < br /> < img src={iconA} alt="icon" /></Link >
+                                < a href="/media_Offer_th" className="nav-link text-light fs-6 "> {mediaOfferA} < br /> {mediaOfferB} < br /> < img src={iconA} alt="icon" /></a>
                             </center>
                         </li>
                         <li className="nav-item">
                             <center >
-                                < Link onClick={() => { page(false) }} to="/mediaOfferB" className="nav-link text-light fs-6 "> {mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></Link >
+                                < a href="/media_Offer_en" className="nav-link text-light fs-6 "> {mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></a >
                             </center>
                         </li>
                     </ul>

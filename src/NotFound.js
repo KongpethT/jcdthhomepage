@@ -1,4 +1,4 @@
-import './css/notFound.css'
+//import './css/notFound.css'
 import { BiError } from "react-icons/bi";
 const NotFound = () => {
     return (

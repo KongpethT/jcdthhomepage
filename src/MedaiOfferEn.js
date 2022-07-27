@@ -1,28 +1,37 @@
-import './css/board.css'
-const MediaOfferEn = () => {
-    let myImg = []
-    const num = 93;
-    const pageStart = 0
-    const pageEnd = (num - 2)
-    const pageOver = (num - 1)
+import React, { useState } from "react";
 
-    for (let i = 0; i < num; i++) {
-        myImg[i] = `/MediaOffer2022Website/Slide${i + 1}.JPG`
-    }
+const MediaOfferEn = () => {
+    const reduce_screen_size = 180
+    const [is_height_screen, set_height_screen] = useState(window.innerHeight)
+    window.addEventListener('resize', () => {
+        set_height_screen(window.innerHeight)
+    })
     return (
-        <section className='board'>
- <div className="slider">
-                    {myImg.map((row, index) => {
-                        return (
-                            <div key={index} id={`no-js-slider-${index}`} className="slide">
-                                <img src={row} alt='pictures' />
-                                <a className="prev" href={(index === pageStart) ? `#no-js-slider-${pageEnd}` : `#no-js-slider-${parseInt(index - 1)}`}>prev</a>
-                                <a className="next" href={(index === pageEnd | index === pageOver) ? `#no-js-slider-0` : `#no-js-slider-${parseInt(index + 1)}`}>next</a>
-                            </div>
-                        )
-                    })}
+        <div>
+            <div className='boxes'
+                style={{ height: (is_height_screen - reduce_screen_size), overflowY: "auto" }}>
+                <div className="row">
+                    <div className="col-12">
+                        <object
+                            className="documents"
+                            trusted="yes"
+                            application="yes"
+                            title="Assembly"
+                            data="/document/MediaOffer2022Website/media_offer_2022.pdf?#view=FitH&toolbar=0"
+                            width="100%"
+                            height={is_height_screen - reduce_screen_size}>
+                        </object>
+                    </div>
+                </div>
             </div>
-        </section >
+            <div className='row'>
+                <div className="col-12">
+                    <div className='mt-4 '>
+                        <p>JCDecaux (Thailand) copyright© 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
