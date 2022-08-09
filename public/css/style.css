@@ -55,10 +55,12 @@
 }
 
 .boxes_view_pdf {
+    margin: 0 auto;
+    width: 95%;
     margin-top: -45px;
     padding-left: 45px;
     padding-right: 45px;
-    height: 85vh;
+    height: 75vh;
     overflow-y: auto;
     background-color: var(--light);
     border: 1px solid var(--light);
@@ -184,8 +186,30 @@ nav ul:hover {
 
 @media screen and (max-width: 991px) {
     .boxes_view_pdf {
+        width: 100%;
         margin-top: -45px;
         padding-left: 12px;
         padding-right: 12px;
     }
+}
+
+@media screen and (max-height: 540px) {
+    .navbar img {
+        height: 40px;
+    }
+
+    .navbar .navbar-toggler-icon {
+        height: 14px;
+        width: 10px;
+        margin-bottom: 3px;
+    }
+
+    .nav-link p {
+        font-size: 12px;
+    }
+
+    .nav-link p img {
+        height: 14px;
+    }
+
 }

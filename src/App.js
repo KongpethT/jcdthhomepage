@@ -18,7 +18,7 @@ function App() {
         <div style={{ height: '45px' }}></div>
         <Switch>
           <Route exact path='/media_Offer_th'><MediaOfferTh /></Route>
-          <Route exact path='/media_Offer_en'><MediaOfferEn /></Route>
+          <Route exact path='/media_Offer_en'><MediaOfferEn data={{clicked:true}}/></Route>
           <Route exact path='/contact'><Contact /></Route>
           <Route exact path='/board'><Board /></Route>
           <Route exact path='/home'><Home /></Route>

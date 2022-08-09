@@ -33,23 +33,32 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent" >
                     <ul className="navbar-nav mt-4">
                         <li className="nav-item ">
+                            <center>
+                                <a href="/home" className="nav-link active text-light fs-6" aria-current="page">
+                                    <p>{homeTh} < br /> {homeEn} </p>
+                                </a>
+                            </center>
+
+                        </li>
+                        <li className="nav-item">
                             <center >
-                                <a href="/home" className="nav-link active text-light fs-6" aria-current="page"> {homeTh} < br /> {homeEn} </a>
+                                <a href="/contact" className="nav-link text-light fs-6 ">
+                                    <p> {contactTh} < br /> {contactEn} </p>
+                                </a>
                             </center>
                         </li>
                         <li className="nav-item">
                             <center >
-                                <a href="/contact" className="nav-link text-light fs-6 "> {contactTh} < br /> {contactEn} </a>
+                                < a href="/media_Offer_th" className="nav-link text-light fs-6 ">
+                                    <p> {mediaOfferA} < br /> {mediaOfferB} < br />< img src={iconA} alt="icon" /></p>
+                                </a>
                             </center>
                         </li>
                         <li className="nav-item">
                             <center >
-                                < a href="/media_Offer_th" className="nav-link text-light fs-6 "> {mediaOfferA} < br /> {mediaOfferB} < br /> < img src={iconA} alt="icon" /></a>
-                            </center>
-                        </li>
-                        <li className="nav-item">
-                            <center >
-                                < a href="/media_Offer_en" className="nav-link text-light fs-6 "> {mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></a >
+                                < a href="/media_Offer_en" className="nav-link text-light fs-6 ">
+                                    <p>{mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></p>
+                                </a >
                             </center>
                         </li>
                     </ul>

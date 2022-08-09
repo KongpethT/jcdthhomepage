@@ -10,6 +10,7 @@ const MediaOfferEn = () => {
                     </div>
                 </div>
             </div>
+
             <div className='row'>
                 <div className="col-12">
                     <div className='mt-4 '>
