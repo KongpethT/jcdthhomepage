@@ -7,7 +7,7 @@ const Pdpa = () => {
             <div className="boxes_view_pdf">
                 <div className="row">
                     <div className="col-12">
-                        <PDFReader data={{ text: '/files/pdpa0001.pdf' }} />
+                        <PDFReader data={{ text: '/files/PrivacyPolicyForInternalStakeholder.pdf' }} />
                     </div>
                 </div>
             </div>

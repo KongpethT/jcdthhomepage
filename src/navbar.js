@@ -2,6 +2,7 @@ import { items } from "./config/env"
 import logo from './medias/image/logojcdsite-220x95.png'
 import iconA from './medias/image/icon_apTh.png'
 import iconB from './medias/image/icon_apEn.png'
+import iconPDPA from './medias/image/tile-pdpa.png'
 import React from "react"
 
 const Navbar = () => {
@@ -14,6 +15,11 @@ const Navbar = () => {
     const mediaOfferB = 'AIRPORT'
     const mediaOfferC = 'AIRPORT'
     const mediaOfferD = 'MEDIA OFFER'
+    const pdpa = 'PDPA'
+    const pdpa_th = 'นโยบายข้อมูลส่วนบุคล'
+    const pdpa_menu = () => {
+       document.getElementById('pdpa_menu').classList.remove('d-none')
+    }
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light " style={{ bgColor }} >
@@ -59,6 +65,18 @@ const Navbar = () => {
                                 < a href="/media_Offer_en" className="nav-link text-light fs-6 ">
                                     <p>{mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></p>
                                 </a >
+                            </center>
+                        </li>
+                        <li className="nav-itemx" onMouseOver={pdpa_menu}>
+                            <center >
+                                < a href="#" className="nav-link text-light fs-6 ">
+                                    <p>{pdpa_th} < br /> < img height={30} src={iconPDPA} alt="icon" /> <br /> {pdpa} < br /> </p>
+                                </a>
+                                <ul id='pdpa_menu' className="d-none">
+                                    <li className="nav-item col-12 text-light text-center" >Privacy Policy For Internal Stakeholder</li>
+                                    <li className="nav-item col-12 text-light text-center">Privacy Policy for External Stakeholder</li>
+                                    <li className="col-12 text-light text-center">CCTV Privacy Notice</li>
+                                </ul>
                             </center>
                         </li>
                     </ul>
