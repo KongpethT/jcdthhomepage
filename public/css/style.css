@@ -184,6 +184,13 @@ nav ul:hover {
     box-shadow: 4px 1px 4px 1px var(--light);
 }
 
+.motions {
+    margin-top: 250px;
+    transition: width 2s;
+    transition: .03s ease-in-out;
+    background-color: var(--secondary);
+}
+
 @media screen and (max-width: 991px) {
     .boxes_view_pdf {
         width: 100%;

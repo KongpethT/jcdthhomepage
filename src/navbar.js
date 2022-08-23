@@ -19,9 +19,11 @@ const Navbar = () => {
     const pdpa = 'PDPA'
     const pdpa_th = 'นโยบายข้อมูลส่วนบุคล'
     const pdpa_mouse_over = () => {
+        document.getElementById('pdpa_menu').classList.add('mitions')
         document.getElementById('pdpa_menu').classList.remove('d-none')
     }
     const pdpa_mouse_out = () => {
+        document.getElementById('pdpa_menu').classList.add('mitions')
         document.getElementById('pdpa_menu').classList.add('d-none')
     }
     return (
@@ -70,7 +72,7 @@ const Navbar = () => {
                                 </a >
                             </center>
                         </li>
-                        <li className="nav-itemx" onMouseOver={pdpa_mouse_over} onMouseOut ={pdpa_mouse_out}>
+                        <li className="nav-itemx" onMouseOver={pdpa_mouse_over} onMouseOut={pdpa_mouse_out}>
                             <center >
                                 < a href="#" className="nav-link text-light fs-6 ">
                                     <p>{pdpa_th} < br /> < img height={30} src={iconPDPA} alt="icon" /> <br /> {pdpa} < br /> </p>
