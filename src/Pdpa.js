@@ -6,12 +6,7 @@ const Pdpa = () => {
     const urlParams = new URLSearchParams(queryString)
     const file = urlParams.get('name')
     let text = 'PrivacyPolicyForInternalStakeholder'
-    //console.log(file);
-    //console.log(urlParams.get('name'))
-    //const urlParams = new URLSearchParams(queryString);
-    //const product = urlParams.get('name')
-    //console.log(product);
-
+   
     switch (file) {
         case 'PrivacyPolicyForInternalStakeholder':
             text = '/files/PrivacyPolicyForInternalStakeholder.pdf'

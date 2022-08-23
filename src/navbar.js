@@ -17,7 +17,7 @@ const Navbar = () => {
     const mediaOfferC = 'AIRPORT'
     const mediaOfferD = 'MEDIA OFFER'
     const pdpa = 'PDPA'
-    const pdpa_th = 'นโยบายข้อมูลส่วนบุคล'
+    const pdpa_th = 'นโยบายข้อมูลส่วนบุคคล'
     const pdpa_mouse_over = () => {
         document.getElementById('pdpa_menu').classList.add('mitions')
         document.getElementById('pdpa_menu').classList.remove('d-none')
