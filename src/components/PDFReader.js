@@ -20,6 +20,7 @@ const PDFReader = (props) => {
         <Viewer
           fileUrl={pdf}
           plugins={[propertiesPluginInstance]}
+          //plugins={[defaultLayoutPluginInstance]}
           theme='right'
           defaultScale={SpecialZoomLevel.PageFit}>
         </Viewer>

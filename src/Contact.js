@@ -2,6 +2,7 @@
 import { FaPhone, FaFax } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import React, { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 const Contact = () => {
     const [is_width_screen, set_width_screen] = useState(window.innerWidth)
@@ -122,13 +123,7 @@ const Contact = () => {
                     </div >
                 </div>
             </div >
-            <div className='row'>
-                <div className="col-12">
-                    <div className='mt-4 '>
-                        <p>JCDecaux (Thailand) copyright© 2022</p>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </div >
     )
 }

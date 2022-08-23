@@ -1,12 +1,13 @@
 import React from "react"
 import PDFReader from "./components/PDFReader"
+import Footer from "./components/Footer";
 
 const Pdpa = () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString)
     const file = urlParams.get('name')
     let text = 'PrivacyPolicyForInternalStakeholder'
-   
+
     switch (file) {
         case 'PrivacyPolicyForInternalStakeholder':
             text = '/files/PrivacyPolicyForInternalStakeholder.pdf'
@@ -18,7 +19,7 @@ const Pdpa = () => {
             text = '/files/CCTVPrivacyNotice.pdf'
             break;
         default:
-            text = '/files/PrivacyPolicyForInternalStakeholder.pdf'
+            text = '/files/pdpa.pdf'
             break;
     }
 
@@ -32,13 +33,7 @@ const Pdpa = () => {
                     </div>
                 </div>
             </div>
-            <div className='row'>
-                <div className="col-12">
-                    <div className='mt-4 '>
-                        <p>JCDecaux (Thailand) copyright© 2022</p>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </div>
     )
 }

@@ -3,6 +3,7 @@ import page2 from './medias/image/page_link2.png'
 import page3 from './medias/image/page_link3.png'
 import page4 from './medias/image/page_link4.png'
 import video from './medias/video/JCD_24MB.mp4'
+import Footer from './components/Footer'
 //import './css/home.css'
 import { Link } from 'react-router-dom'
 import React, { useState } from "react"
@@ -18,7 +19,7 @@ const Home = (props) => {
         }
     })
     return (
-        <div >
+        <div>
             <div
                 className='boxes'
                 style={{ height: (is_height_screen - reduce_screen_size), overflowY: "auto" }} >
@@ -71,13 +72,7 @@ const Home = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='row'>
-                <div className="col-12">
-                    <div className='mt-4 '>
-                        <p>JCDecaux (Thailand) copyright© 2022</p>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </div>
     )
 }

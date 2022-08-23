@@ -2,8 +2,6 @@ import { items } from "./config/env"
 import logo from './medias/image/logojcdsite-220x95.png'
 import iconA from './medias/image/icon_apTh.png'
 import iconB from './medias/image/icon_apEn.png'
-import iconPDPA from './medias/image/tile-pdpa.png'
-import Pdpa from "./Pdpa"
 import React from "react"
 
 const Navbar = () => {
@@ -12,20 +10,18 @@ const Navbar = () => {
     const homeEn = 'HOME'
     const contactTh = 'ผู้ติดต่อ'
     const contactEn = 'CONTACTS'
-    const mediaOfferA = 'ข้อเสนอสือโฆษณา'
+    const mediaOfferA = 'ข้อเสนอสื่อโฆษณา'
     const mediaOfferB = 'AIRPORT'
     const mediaOfferC = 'AIRPORT'
     const mediaOfferD = 'MEDIA OFFER'
-    const pdpa = 'PDPA'
-    const pdpa_th = 'นโยบายข้อมูลส่วนบุคคล'
-    const pdpa_mouse_over = () => {
+    /*const pdpa_mouse_over = () => {
         document.getElementById('pdpa_menu').classList.add('mitions')
         document.getElementById('pdpa_menu').classList.remove('d-none')
     }
     const pdpa_mouse_out = () => {
         document.getElementById('pdpa_menu').classList.add('mitions')
         document.getElementById('pdpa_menu').classList.add('d-none')
-    }
+    }*/
     return (
         <nav className="navbar navbar-expand-lg navbar-light " style={{ bgColor }} >
             <div className="container-fluid" >
@@ -72,10 +68,11 @@ const Navbar = () => {
                                 </a >
                             </center>
                         </li>
-                        <li className="nav-itemx" onMouseOver={pdpa_mouse_over} onMouseOut={pdpa_mouse_out}>
+                        
+                       {/*<li className="nav-itemx" onMouseOver={pdpa_mouse_over} onMouseOut={pdpa_mouse_out}>
                             <center >
                                 < a href="#" className="nav-link text-light fs-6 ">
-                                    <p>{pdpa_th} < br /> < img height={30} src={iconPDPA} alt="icon" /> <br /> {pdpa} < br /> </p>
+                                    <p>{pdpa_th} < br /> {pdpa} < br /> < img height={30} src={iconPDPA} alt="icon" /></p>
                                 </a>
                                 <ul id='pdpa_menu' className="d-none">
                                     <li className="nav-item col-12 text-light text-center" >
@@ -89,7 +86,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             </center>
-                        </li>
+                        </li>*/}
                     </ul>
                 </div>
             </div>

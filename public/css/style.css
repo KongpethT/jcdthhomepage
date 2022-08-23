@@ -54,7 +54,7 @@
     padding-right: 45px;
 }
 
-.boxes_view_pdf {
+.boxes_view_pdf{
     margin: 0 auto;
     width: 95%;
     margin-top: -45px;
@@ -189,6 +189,14 @@ nav ul:hover {
     transition: width 2s;
     transition: .03s ease-in-out;
     background-color: var(--secondary);
+}
+
+.alink {
+    text-decoration: none;
+}
+
+.alink:hover {
+    opacity: 0.7;
 }
 
 @media screen and (max-width: 991px) {

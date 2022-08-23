@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./components/Footer";
 import PDFReader from "./components/PDFReader"
 
 const MediaOfferTh = () => {
@@ -12,13 +13,7 @@ const MediaOfferTh = () => {
                     </div>
                 </div>
             </div>
-            <div className='row'>
-                <div className="col-12">
-                    <div className='mt-4 '>
-                        <p>JCDecaux (Thailand) copyright© 2022</p>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </div>
     )
 }
