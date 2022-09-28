@@ -1,7 +1,7 @@
 import { items } from "./config/env"
-import logo from './medias/image/logojcdsite-220x95.png'
-import iconA from './medias/image/icon_apTh.png'
-import iconB from './medias/image/icon_apEn.png'
+//import logo from './medias/image/logojcdsite-220x95.png'
+//import iconA from './medias/image/icon_apTh.png'
+//import iconB from './medias/image/icon_apEn.png'
 import React from "react"
 
 const Navbar = () => {
@@ -14,18 +14,11 @@ const Navbar = () => {
     const mediaOfferB = 'AIRPORT'
     const mediaOfferC = 'AIRPORT'
     const mediaOfferD = 'MEDIA OFFER'
-    /*const pdpa_mouse_over = () => {
-        document.getElementById('pdpa_menu').classList.add('mitions')
-        document.getElementById('pdpa_menu').classList.remove('d-none')
-    }
-    const pdpa_mouse_out = () => {
-        document.getElementById('pdpa_menu').classList.add('mitions')
-        document.getElementById('pdpa_menu').classList.add('d-none')
-    }*/
+    
     return (
         <nav className="navbar navbar-expand-lg navbar-light " style={{ bgColor }} >
             <div className="container-fluid" >
-                <img src={logo} alt="logo" />
+                <img src='image/logojcdsite-220x95.png' alt="logo" />
                 <button
                     style={{ color: 'gray' }}
                     className="navbar-toggler bg-light"
@@ -57,14 +50,14 @@ const Navbar = () => {
                         <li className="nav-item">
                             <center >
                                 < a href="/media_Offer_th" className="nav-link text-light fs-6 ">
-                                    <p> {mediaOfferA} < br /> {mediaOfferB} < br />< img src={iconA} alt="icon" /></p>
+                                    <p> {mediaOfferA} < br /> {mediaOfferB} < br />< img src='image/icon_apTh.png' alt="icon" /></p>
                                 </a>
                             </center>
                         </li>
                         <li className="nav-item">
                             <center >
                                 < a href="/media_Offer_en" className="nav-link text-light fs-6 ">
-                                    <p>{mediaOfferC} < br /> {mediaOfferD} < br /> < img src={iconB} alt="icon" /></p>
+                                    <p>{mediaOfferC} < br /> {mediaOfferD} < br /> < img src='image/icon_apEn.png' alt="icon" /></p>
                                 </a >
                             </center>
                         </li>

@@ -54,7 +54,7 @@
     padding-right: 45px;
 }
 
-.boxes_view_pdf{
+.boxes_view_pdf {
     margin: 0 auto;
     width: 95%;
     margin-top: -45px;
@@ -207,6 +207,35 @@ nav ul:hover {
         padding-right: 12px;
     }
 }
+
+/* cookie alert*/
+.bg-custom {
+    background-color: var(--background);
+    border-radius: 10px;
+}
+
+.bg-custom a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-fixed {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    border-radius: 4px;
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* end*/
 
 @media screen and (max-height: 540px) {
     .navbar img {

@@ -1,13 +1,9 @@
-import page1 from './medias/image/page_link1.png'
-import page2 from './medias/image/page_link2.png'
-import page3 from './medias/image/page_link3.png'
-import page4 from './medias/image/page_link4.png'
-import video from './medias/video/JCD_24MB.mp4'
+
+
 import Footer from './components/Footer'
-//import './css/home.css'
 import { Link } from 'react-router-dom'
 import React, { useState } from "react"
-//import Footer from "./Footer"
+
 const Home = (props) => {
     const reduce_screen_size = 180
     const [is_height_screen, set_height_screen] = useState(window.innerHeight)
@@ -29,7 +25,7 @@ const Home = (props) => {
                         <div>
                             <div
                                 className='d-flex flex-row justify-content-end mb-2'>
-                                <Link to='/board'><img src={page1} alt="img" className='picture-auto' />
+                                <Link to='/board'><img src='image/page_link1.png' alt="img" className='picture-auto' />
                                 </Link>
                             </div>
                         </div>
@@ -37,7 +33,7 @@ const Home = (props) => {
                             <div
                                 className='d-flex flex-row justify-content-end'>
                                 <a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/our-presence'>
-                                    <img src={page2} alt="img" className='picture-auto' />
+                                    <img src='image/page_link2.png' alt="img" className='picture-auto' />
                                 </a>
                             </div>
                         </div>
@@ -46,7 +42,7 @@ const Home = (props) => {
                     <div className='col-5 center'>
                         <div className='d-flex justify-content-center'>
                             <video width="100%" controls data-autoplay preload="true" loop muted={true} autoPlay >
-                                <source src={video} type="video/mp4" />
+                                <source src='video/JCD_24MB.mp4' type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -57,7 +53,7 @@ const Home = (props) => {
                             <div
                                 className='auto'>
                                 <a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/'>
-                                    <img src={page3} alt="img" className='picture-auto' />
+                                    <img src='image/page_link3.png' alt="img" className='picture-auto' />
                                 </a>
                             </div>
                         </div>
@@ -65,7 +61,7 @@ const Home = (props) => {
                             <div
                                 className=''>
                                 <a target="_blank" rel="noreferrer noopener" href='https://www.jcdecaux.com/about-us#aboutjcdecaux'>
-                                    <img src={page4} alt="img" className='picture-auto' />
+                                    <img src='image/page_link4.png' alt="img" className='picture-auto' />
                                 </a>
                             </div>
                         </div>
