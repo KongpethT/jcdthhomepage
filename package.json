@@ -8,6 +8,7 @@
     "@react-pdf-viewer/properties": "^3.6.0",
     "@react-pdf-viewer/selection-mode": "^3.6.0",
     "@react-pdf-viewer/zoom": "^3.6.0",
+    "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
     "mkcert": "^1.5.0",
     "pdfjs-dist": "^2.6.347",

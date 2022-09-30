@@ -1,14 +1,38 @@
-const CookieAlert = () => {
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+const CookieAlert = (props) => {
+    const [is_cookie, set_cookie] = useState(null)
+
+    const getData = async () => {
+        await axios.get('https://geolocation-db.com/json/')
+            .then((value) => {
+                console.log(value.data)
+                set_cookie(value.data)
+            })
+    }
+    useEffect(() => {
+        getData()
+    }, [])
+
+    //console.log('my cookie: ', is_cookie);
     let elements = document.cookie
         .split(';')
         .map(cookie => cookie.split('='))
         .reduce((accumulator, [key, value]) =>
             ({ ...accumulator, [key.trim()]: decodeURIComponent(value) }), {})
-            
+
     const accept_cookie = () => {
         const cookie_card = document.getElementById('cookie_message')
         cookie_card.classList.add('d-none')
         document.cookie = 'web_cookie = true'
+        document.cookie = 'IP_Address = ' + is_cookie.IPv4
+        document.cookie = 'country = ' + is_cookie.country_name
+        document.cookie = 'city = ' + is_cookie.city
+        document.cookie = 'postal = ' + is_cookie.postal
+        document.cookie = 'state = ' + is_cookie.state
+        document.cookie = 'latitude = ' + is_cookie.latitude
+        document.cookie = 'longitude = ' + is_cookie.longitude
     }
 
     const not_accept_cookie = () => {

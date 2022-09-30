@@ -12,7 +12,6 @@ import CookieAlert from "./components/CookieAlert";
 
 
 const App = () => {
-
   return (
     <div >
       <BrowserRouter>
