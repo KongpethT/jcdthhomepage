@@ -1,19 +1,21 @@
 import React from "react";
-import Footer from "./components/Footer";
-import PDFReader from "./components/PDFReader"
 
 const Borad = () => {
+
     return (
-        <div>
-            <div className='boxes_view_pdf'>
-                <div className="row">
-                    <div className="col-12">
-                        <PDFReader data={{ text: '/files/board.pdf' }} />
-                    </div>
-                </div>
+        <>
+            <div className="container" style={{ height: "75vh" }}>
+                <iframe
+                    src="https://jcdecaux.sharepoint.com/sites/Asia-ExternalShare/_layouts/15/embed.aspx?UniqueId=d38fa4cb-cf52-4f9e-8122-84d0011b67be"
+                    width="100%"
+                    height="94%"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen
+                    title="board.pdf">
+                </iframe>
             </div>
-            <Footer />
-        </div>
+        </>
     )
 }
 

@@ -1,8 +1,5 @@
-//import './css/contact.css'
-import { FaPhone, FaFax } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
 import React, { useEffect, useState } from "react";
-import Footer from "./components/Footer";
+import { config } from "./configuration/config"
 
 const Contact = () => {
     const [is_width_screen, set_width_screen] = useState(window.innerWidth)
@@ -30,8 +27,8 @@ const Contact = () => {
         }
     }, [is_width_screen])
     return (
-        <div>
-            <div className="contact-bar">
+        <>
+            <div className='container' style={{ backgroundColor: config.colors.dark, paddingTop: '10px' }}>
                 <div className="row">
                     <div
                         className="text-nowrap col-sm-2">
@@ -43,88 +40,81 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className='boxes_view_contact'>
+
+            <div className="container">
                 <div className="row">
-                    <div id="en" className="col-12 bg-light text-secondary mt-5">
+                    <div id="en" className="col-12 text-secondary mt-5">
                         <div className='px-5 py-5 language-en'>
-                            <p className=''>3 Rajanakarn Building, 21st Floor, South Sathorn Road, Yannawa, Sathorn, Bangkok, Thailand 10120</p>
-                            <p className=''> <FaPhone className='text-dark' /> Tel: (+662) 676 7655-64</p>
-                            <p className=''> <FaFax className='text-dark' /> Fax:(+662) 676 7667</p>
-                            <p>
+                            <p className='fs-5'>
+                                3 Rajanakarn Building, 21st Floor, South Sathorn Road, Yannawa, Sathorn, Bangkok, Thailand 10120
+                                <br />Tel: (+662) 676 7655-64, Fax:(+662) 676 7667
+                            </p>
+                            <p className="mx-5">
                                 Mr. Arnaud Marie, Michel de Ruffray – Managing Director -
-                                <HiMail className='text-dark' /> <a href='mailto:Arnaud.deruffray@jcdecaux.com' className='email'>
+                                &nbsp; <a href='mailto:Arnaud.deruffray@jcdecaux.com'>
                                     Arnaud.deruffray@jcdecaux.com
                                 </a>
-                            </p>
-                            <p>
+                                <br />
                                 Ms. Atiporn Lertskulsomboon – Finance & Accounting Director & Human Resource -
-                                <HiMail className='text-dark' /> <a href='mailto:AtipornL@jcdecaux.com' className='email'>
+                                &nbsp; <a href='mailto:AtipornL@jcdecaux.com'>
                                     AtipornL@jcdecaux.com
                                 </a>
-                            </p>
-                            <p>
+                                <br />
                                 Ms. Chantana Arschariyawinyoo – General Manager Airport, Sales & Marketing -
-                                <HiMail className='text-dark' /> <a href='mailto:ChantanaA@jcdecaux.com' className='email'>
+                                &nbsp; <a href='mailto:ChantanaA@jcdecaux.com'>
                                     ChantanaA@jcdecaux.com
                                 </a>
-                            </p>
-                            <p>
+                                <br />
                                 Mr. Theera Sriboonwong – Operations Director -
-                                <HiMail className='text-dark' /> <a href='mailto:TheeraS@jcdecaux.com' className='email'>
+                                &nbsp; <a href='mailto:TheeraS@jcdecaux.com'>
                                     TheeraS@jcdecaux.com
                                 </a>
-                            </p>
-                            <p>
+                                <br />
                                 Ms. Panadda Deesiri – HR & Administration Manager –
-                                <HiMail className='text-dark' /> <a href='mailto:PanaddaD@jcdecaux.com' className='email'>
+                                &nbsp; <a href='mailto:PanaddaD@jcdecaux.com'>
+                                    PanaddaD@jcdecaux.com
+                                </a>
+                            </p>
+                        </div >
+                    </div >
+
+                    <div id="th" className="col-12 text-secondary mt-5 hident">
+                        <div className='px-5 py-5 language-th'>
+                            <p className='fs-5'>
+                                เลขที่ 3 อาคารรัจนาการ ชั้น 21 ถนนสาทรใต้ แขวงยานนาวา เขตสาทร กรุงเทพฯ ประเทศไทย 10120
+                                <br />โทร: (+662) 676 7655-64, แฟกซ์:(+662) 676 7667
+                            </p>
+                            <p className='mx-5'>
+                                นายอาร์โนลด์ มารี มิเชล เดอ รุฟเฟรย์ – กรรมการผู้จัดการ -
+                                &nbsp; <a href='mailto:Arnaud.deruffray@jcdecaux.com'>
+                                    Arnaud.deruffray@jcdecaux.com
+                                </a>
+                                <br />
+                                นางสาวอติพร เลิศสกุลสมบูรณ์ – ผู้อำนวยการฝ่ายการเงิน,บัญชี และบุคคล -
+                                &nbsp; <a href='mailto:AtipornL@jcdecaux.com'>
+                                    AtipornL@jcdecaux.com
+                                </a>
+                                <br />
+                                นางสาวฉันทนา อัจฉริยวิญญู – ผู้จัดการทั่วไปฝ่ายสนามบิน การขาย และการตลาด -
+                                &nbsp; <a href='mailto:ChantanaA@jcdecaux.com'>
+                                    ChantanaA@jcdecaux.com
+                                </a>
+                                <br />
+                                นายธีระ ศรีบุญวงศ์ – ผู้อำนวยการฝ่ายปฏิบัติการ -
+                                &nbsp; <a href='mailto:TheeraS@jcdecaux.com'>
+                                    TheeraS@jcdecaux.com
+                                </a>
+                                <br />
+                                นางสาวปนัดดา ดีศิริ – ผู้จัดการฝ่ายบุคคลและธุรการ –
+                                &nbsp; <a href='mailto:PanaddaD@jcdecaux.com'>
                                     PanaddaD@jcdecaux.com
                                 </a>
                             </p>
                         </div>
                     </div >
-                </div>
-                <div className="row">
-                    <div id="th" className="col-12 bg-light text-secondary mt-5 hident">
-                        <div className='px-5 py-5 language-th'>
-                            <p className=''>เลขที่ 3 อาคารรัจนาการ ชั้น 21 ถนนสาทรใต้ แขวงยานนาวา เขตสาทร กรุงเทพฯ ประเทศไทย 10120</p>
-                            <p className=''> <FaPhone className='text-dark' /> โทร (+662) 676 7655-64</p>
-                            <p className=''> <FaFax className='text-dark' /> แฟกซ์ (+662) 676 7667</p>
-                            <p className=''>
-                                นายอาร์โนลด์ มารี มิเชล เดอ รุฟเฟรย์ – กรรมการผู้จัดการ -
-                                <a href='mailto:Arnaud.deruffray@jcdecaux.com' className='email'>
-                                    <HiMail className='text-dark' /> Arnaud.deruffray@jcdecaux.com
-                                </a>
-                            </p>
-                            <p className=''>
-                                นางสาวอติพร เลิศสกุลสมบูรณ์ – ผู้อำนวยการฝ่ายการเงิน,บัญชี และบุคคล -
-                                <a href='mailto:AtipornL@jcdecaux.com' className='email'>
-                                    <HiMail className='text-dark' /> AtipornL@jcdecaux.com
-                                </a>
-                            </p>
-                            <p className=''>
-                                นางสาวฉันทนา อัจฉริยวิญญู – ผู้จัดการทั่วไปฝ่ายสนามบิน การขาย และการตลาด -
-                                <a href='mailto:ChantanaA@jcdecaux.com' className='email'>
-                                    <HiMail className='text-dark' /> ChantanaA@jcdecaux.com
-                                </a>
-                            </p>
-                            <p className=''>
-                                นายธีระ ศรีบุญวงศ์ – ผู้อำนวยการฝ่ายปฏิบัติการ -
-                                <a href='mailto:TheeraS@jcdecaux.com' className='email'>
-                                    <HiMail className='text-dark' /> TheeraS@jcdecaux.com
-                                </a>
-                            </p>
-                            <p className=''>
-                                นางสาวปนัดดา ดีศิริ – ผู้จัดการฝ่ายบุคคลและธุรการ –
-                                <a href='mailto:PanaddaD@jcdecaux.com' className='email'>
-                                    <HiMail className='text-dark' /> PanaddaD@jcdecaux.com
-                                </a>
-                            </p>
-                        </div>
-                    </div >
-                </div>
-            </div >
-            <Footer />
-        </div >
+                </div >
+            </div>
+        </>
     )
 }
 
