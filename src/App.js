@@ -26,7 +26,7 @@ const App = () => {
 
 
           {/**rounte external */}
-          <Route path='/salesforecast' element={<Outsite link='https://10.180.0.7' />} />
+          <Route path='/timesheet' element={<Outsite link='https://10.180.0.7' />} />
           <Route path='/bee' element={<Outsite link='https://bee.jcdecaux.com' />} />
           <Route path='/leave' element={<Outsite link='https://jcdecaux.leaveonline.com' />} />
           <Route path='/mfa' element={<Outsite link='https://aka.ms/mfasetup' />} />
