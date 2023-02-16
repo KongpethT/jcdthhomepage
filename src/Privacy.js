@@ -1,7 +1,24 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 
 const Internal = () => {
+
+    const index_img = 15
+    let imgs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
+    const items_img = () => {
+        for (let i = 1; i <= index_img; i++) {
+            imgs[i] = { id: i }
+        }
+    }
+    const [screen_y, _screen_y] = useState(window.innerHeight)
+    window.addEventListener('resize', () => {
+        _screen_y(window.innerHeight)
+    })
+
+    useEffect(() => {
+        items_img()
+    }, [])
+
     return (
         <>
             <div className="container mb-2">
@@ -18,22 +35,36 @@ const Internal = () => {
                     </div>
                 </nav>
             </div>
-            <div className="container" style={{ height: "67vh" }}>
-                <iframe
-                    src="https://jcdecaux.sharepoint.com/sites/Asia-ExternalShare/_layouts/15/embed.aspx?UniqueId=780e342f-f466-4db3-ba7f-0b295674b97d"
-                    width="100%"
-                    height="94%"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen
-                    title="PrivacyPolicyForInternalStakeholder.pdf">
-                </iframe>
+            <div>
+                <div style={{ height: screen_y - 250 }} className="show-items">
+                    {imgs.map((id) => {
+                        return (
+                            <div className="items-img">
+                                <img src={`./image/PrivacyPolicyForInternalStakeholder/PrivacyPolicyForInternalStakeholder-${id}.png`} alt="picture" />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </>
     )
 }
 
 const External = () => {
+    const index_img = 15
+    let imgs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
+    const items_img = () => {
+        for (let i = 1; i <= index_img; i++) {
+            imgs[i] = { id: i }
+        }
+    }
+    const [screen_y, _screen_y] = useState(window.innerHeight)
+    window.addEventListener('resize', () => {
+        _screen_y(window.innerHeight)
+    })
+    useEffect(() => {
+        items_img()
+    }, [])
     return (
         <>
             <div className="container mb-2">
@@ -50,23 +81,36 @@ const External = () => {
                     </div>
                 </nav>
             </div>
-            <div className="container" style={{ height: "67vh" }}>
-                <iframe
-                    src="https://jcdecaux.sharepoint.com/sites/Asia-ExternalShare/_layouts/15/embed.aspx?UniqueId=df687959-2801-41eb-8621-cb90ddb81ff8"
-                    width="100%"
-                    height="94%"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen
-                    title="PrivacyPolicyForExternalStakeholder.pdf">
-
-                </iframe>
+            <div>
+                <div style={{ height: screen_y - 250 }} className="show-items">
+                    {imgs.map((id) => {
+                        return (
+                            <div className="items-img">
+                                <img src={`./image/PrivacyPolicyForExternalStakeholder/PrivacyPolicyForExternalStakeholder-${id}.png`} alt="picture" />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </>
     )
 }
 
 const CCTV = () => {
+    const index_img = 15
+    let imgs = ["1", "2", "3", "4", "5", "6", "7"]
+    const items_img = () => {
+        for (let i = 1; i <= index_img; i++) {
+            imgs[i] = { id: i }
+        }
+    }
+    const [screen_y, _screen_y] = useState(window.innerHeight)
+    window.addEventListener('resize', () => {
+        _screen_y(window.innerHeight)
+    })
+    useEffect(() => {
+        items_img()
+    }, [])
     return (
         <>
             <div className="container mb-2">
@@ -84,16 +128,16 @@ const CCTV = () => {
                 </nav>
             </div>
 
-            <div className="container" style={{ height: "67vh" }}>
-                <iframe
-                    src="https://jcdecaux.sharepoint.com/sites/Asia-ExternalShare/_layouts/15/embed.aspx?UniqueId=27e4ded9-b5cc-49a2-be15-8a6207a41231"
-                    width="100%"
-                    height="94%"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen
-                    title="CCTVPrivacyNotice.pdf">
-                </iframe>
+            <div>
+                <div style={{ height: screen_y - 250 }} className="show-items">
+                    {imgs.map((id) => {
+                        return (
+                            <div className="items-img">
+                                <img src={`./image/CCTVPrivacyNotice/CCTVPrivacyNotice-${id}.png`} alt="picture" />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </>
     )

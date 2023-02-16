@@ -1,36 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 
 
 const Media_offer_en = () => {
+    let imgs = []
+    for (let i = 1; i <= 92; i++) {
+        imgs.push(i)
+    }
+
+    const [screen_y, _screen_y] = useState(window.innerHeight)
+    window.addEventListener('resize', () => {
+        _screen_y(window.innerHeight)
+    })
+
     return (
         <>
-            <div className="container" style={{ height: "75vh" }}>
-                <iframe
-                    src="https://jcdecaux.sharepoint.com/sites/Asia-ExternalShare/_layouts/15/embed.aspx?UniqueId=d900a54a-0a1f-48a4-99aa-ffc2aa9fea08"
-                    width="100%"
-                    height="94%"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen
-                    title="mediaoffer.pdf"></iframe>
+            <div>
+                <div style={{ height: screen_y - 200 }} className="show-items">
+                    {imgs.map((id, index) => {
+                        return (
+                            <div key={index} className="items-img">
+                                <img src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="picture" />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </>
     )
 }
 
 const Media_offer_th = () => {
+    let imgs = []
+    for (let i = 1; i <= 92; i++) {
+        imgs.push(i)
+    }
+
+    const [screen_y, _screen_y] = useState(window.innerHeight)
+    window.addEventListener('resize', () => {
+        _screen_y(window.innerHeight)
+    })
+
     return (
         <>
-            <div className="container" style={{ height: "75vh" }}>
-                <iframe
-                    src="https://jcdecaux.sharepoint.com/sites/Asia-ExternalShare/_layouts/15/embed.aspx?UniqueId=d900a54a-0a1f-48a4-99aa-ffc2aa9fea08"
-                    width="100%"
-                    height="94%"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen
-                    title="mediaoffer.pdf"></iframe>
+            <div>
+                <div style={{ height: screen_y - 200 }} className="show-items">
+                    {imgs.map((id, index) => {
+                        return (
+                            <div key={index} className="items-img">
+                                <img src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="picture" />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </>
     )

@@ -1,5 +1,5 @@
 import React from "react";
-import { menu } from "./Navbar";
+import { menu } from "./navbar";
 import Home from './Home'
 import Contact from './Contact'
 import Board from './Board'
@@ -11,7 +11,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 const App = () => {
   return (
     < >
-      <iframe className="d-none" src='https://jcdecaux.sharepoint.com/:f:/s/Asia-ExternalShare/Enwlq0HA6ndJsideNtu3GIIB5FfDz5K7W1uFooePzhB97A?e=slHNl4' />
       <BrowserRouter>
         <menu.top_bar />
         <Routes>

@@ -1,10 +1,14 @@
+import React, { useState } from "react"
 
-import React from "react"
 const Home = (props) => {
+    const [screen_y, _screen_y] = useState(window.innerHeight)
+    window.addEventListener("resize", () => {
+        _screen_y(window.innerHeight)
+    })
 
     return (
         <>
-            <div className='container' style={{marginTop:'5%'}}>
+            <div className='container' style={{position: "relative", top: screen_y - (screen_y - 150)}}>
                 <div className='row justify-content-center'>
                     <div className='col-3 align-self-start'>
                         <div className='d-flex flex-row justify-content-end mb-2'>
