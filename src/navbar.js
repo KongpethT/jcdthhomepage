@@ -64,7 +64,7 @@ const Footer = (props) => {
                         JCDecaux (Thailand) copyright© 2022
                     </p>
                     <p style={{ width: '50%', backgroundColor: '', textAlign: 'right' , marginRight: '25px'}}>
-                        <a className='text-light alink ' href='/pdpa'>นโยบายข้อมูลส่วนบุคคล</a>
+                        <a className='text-light alink ' href='/pdpa-internal'>นโยบายข้อมูลส่วนบุคคล</a>
                     </p>
                 </div>
 

@@ -19,9 +19,9 @@ const App = () => {
           <Route path='/board' element={<Board />} />
           <Route path='/media offer th' element={<media.th />} />
           <Route path='/media offer en' element={<media.eng />} />
-          <Route path='/pdpa' element={<privacy.internal />} />
-          <Route path='/pdpa external' element={<privacy.external />} />
-          <Route path='/pdpa cctv' element={<privacy.cctv />} />
+          <Route path='/pdpa-internal' element={<privacy.internal />} />
+          <Route path='/pdpa-external' element={<privacy.external />} />
+          <Route path='/pdpa-cctv' element={<privacy.cctv />} />
 
 
           {/**rounte external */}
@@ -33,6 +33,7 @@ const App = () => {
           <Route path='/help' element={<Outsite link='https://sgsin0ap0019:8080' />} />
           <Route path='/qmail' element={<Outsite link='https://eu.quarantine.symantec.com' />} />
           <Route path='/admin365' element={<Outsite link='https://outlook.office365.com/ecp' />} />
+          <Route path='/pdpa' element={<Outsite link='https://www.jcdecaux.co.th/pdpa-internal' />} />
         </Routes>
         <menu.bottom_bar />
       </BrowserRouter>

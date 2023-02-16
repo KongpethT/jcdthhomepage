@@ -5,7 +5,7 @@ const Footer = () => {
             <p className='col-6  text-nowrap text-end'>
                 <a
                     className='text-light alink '
-                    href='/pdpa'>นโยบายข้อมูลส่วนบุคคล
+                    href='/pdpas'>นโยบายข้อมูลส่วนบุคคล
                 </a></p>
         </div>
     )

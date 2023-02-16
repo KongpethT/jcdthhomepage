@@ -256,8 +256,9 @@ p {
 .box-center {
     position: relative;
     top: 50%;
-    right: 50%;
-    transform: translate(60%, 35%);
+    left: 0%;
+    transform: translate(0%, 10%);
+    
 }
 
 /* end box-content screen at center*/

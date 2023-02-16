@@ -27,9 +27,9 @@ const Internal = () => {
                         <p className="text-secondary fs-6 mx-1 my-1">Private Policy for Internal Stakeholder</p>
                         <div className="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent" >
                             <ul className="navbar-nav">
-                                <li className="btn btn-primary btn-sm mx-1 my-1"> <a href="/pdpa" className="text-light" style={{ textDecoration: 'none' }}>Private Policy for Internal Stakeholder</a> </li>
-                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa external" className="text-light" style={{ textDecoration: 'none' }}>Privacy Policy for External Stakeholder</a></li>
-                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa cctv" className="text-light" style={{ textDecoration: 'none' }}>CCTY Privacy Notice</a></li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"> <a href="/pdpa-internal" className="text-light" style={{ textDecoration: 'none' }}>Private Policy for Internal Stakeholder</a> </li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa-external" className="text-light" style={{ textDecoration: 'none' }}>Privacy Policy for External Stakeholder</a></li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa-cctv" className="text-light" style={{ textDecoration: 'none' }}>CCTY Privacy Notice</a></li>
                             </ul>
                         </div>
                     </div>
@@ -73,9 +73,9 @@ const External = () => {
                         <p className="text-secondary fs-6 mx-1 my-1">Privacy Policy for External Stakeholder</p>
                         <div className="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent" >
                             <ul className="navbar-nav">
-                                <li className="btn btn-primary btn-sm mx-1 my-1"> <a href="/pdpa" className="text-light" style={{ textDecoration: 'none' }}>Private Policy for Internal Stakeholder</a> </li>
-                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa external" className="text-light" style={{ textDecoration: 'none' }}>Privacy Policy for External Stakeholder</a></li>
-                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa cctv" className="text-light" style={{ textDecoration: 'none' }}>CCTY Privacy Notice</a></li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"> <a href="/pdpa-internal" className="text-light" style={{ textDecoration: 'none' }}>Private Policy for Internal Stakeholder</a> </li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa-external" className="text-light" style={{ textDecoration: 'none' }}>Privacy Policy for External Stakeholder</a></li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa-cctv" className="text-light" style={{ textDecoration: 'none' }}>CCTY Privacy Notice</a></li>
                             </ul>
                         </div>
                     </div>
@@ -119,9 +119,9 @@ const CCTV = () => {
                         <p className="text-secondary fs-6 mx-1 my-1">CCTY Privacy Notice</p>
                         <div className="collapse navbar-collapse col justify-content-end" id="navbarSupportedContent" >
                             <ul className="navbar-nav">
-                                <li className="btn btn-primary btn-sm mx-1 my-1"> <a href="/pdpa" className="text-light" style={{ textDecoration: 'none' }}>Private Policy for Internal Stakeholder</a> </li>
-                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa external" className="text-light" style={{ textDecoration: 'none' }}>Privacy Policy for External Stakeholder</a></li>
-                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa cctv" className="text-light" style={{ textDecoration: 'none' }}>CCTY Privacy Notice</a></li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"> <a href="/pdpa-internal" className="text-light" style={{ textDecoration: 'none' }}>Private Policy for Internal Stakeholder</a> </li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa-external" className="text-light" style={{ textDecoration: 'none' }}>Privacy Policy for External Stakeholder</a></li>
+                                <li className="btn btn-primary btn-sm mx-1 my-1"><a href="/pdpa-cctv" className="text-light" style={{ textDecoration: 'none' }}>CCTY Privacy Notice</a></li>
                             </ul>
                         </div>
                     </div>
