@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from "react"
-
+import React, { useState } from "react"
+import { screen } from "./components/screen";
 
 const Internal = () => {
-
-    const index_img = 15
     let imgs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
-    const items_img = () => {
-        for (let i = 1; i <= index_img; i++) {
-            imgs[i] = { id: i }
-        }
-    }
     const [screen_y, _screen_y] = useState(window.innerHeight)
     window.addEventListener('resize', () => {
         _screen_y(window.innerHeight)
     })
 
-    useEffect(() => {
-        items_img()
-    }, [])
 
     return (
         <>
@@ -36,11 +26,11 @@ const Internal = () => {
                 </nav>
             </div>
             <div>
-                <div style={{ height: screen_y - 250 }} className="show-items">
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
-                                <img src={`./image/PrivacyPolicyForInternalStakeholder/PrivacyPolicyForInternalStakeholder-${id}.png`} alt="picture" />
+                                <img src={`./image/PrivacyPolicyForInternalStakeholder/PrivacyPolicyForInternalStakeholder-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}
@@ -51,20 +41,11 @@ const Internal = () => {
 }
 
 const External = () => {
-    const index_img = 15
     let imgs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
-    const items_img = () => {
-        for (let i = 1; i <= index_img; i++) {
-            imgs[i] = { id: i }
-        }
-    }
     const [screen_y, _screen_y] = useState(window.innerHeight)
     window.addEventListener('resize', () => {
         _screen_y(window.innerHeight)
     })
-    useEffect(() => {
-        items_img()
-    }, [])
     return (
         <>
             <div className="container mb-2">
@@ -82,11 +63,11 @@ const External = () => {
                 </nav>
             </div>
             <div>
-                <div style={{ height: screen_y - 250 }} className="show-items">
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
-                                <img src={`./image/PrivacyPolicyForExternalStakeholder/PrivacyPolicyForExternalStakeholder-${id}.png`} alt="picture" />
+                                <img src={`./image/PrivacyPolicyForExternalStakeholder/PrivacyPolicyForExternalStakeholder-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}
@@ -97,20 +78,11 @@ const External = () => {
 }
 
 const CCTV = () => {
-    const index_img = 15
     let imgs = ["1", "2", "3", "4", "5", "6", "7"]
-    const items_img = () => {
-        for (let i = 1; i <= index_img; i++) {
-            imgs[i] = { id: i }
-        }
-    }
     const [screen_y, _screen_y] = useState(window.innerHeight)
     window.addEventListener('resize', () => {
         _screen_y(window.innerHeight)
     })
-    useEffect(() => {
-        items_img()
-    }, [])
     return (
         <>
             <div className="container mb-2">
@@ -129,11 +101,11 @@ const CCTV = () => {
             </div>
 
             <div>
-                <div style={{ height: screen_y - 250 }} className="show-items">
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
-                                <img src={`./image/CCTVPrivacyNotice/CCTVPrivacyNotice-${id}.png`} alt="picture" />
+                                <img src={`./image/CCTVPrivacyNotice/CCTVPrivacyNotice-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}
