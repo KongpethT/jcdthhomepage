@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { screen } from "./components/screen";
 
 
@@ -17,11 +17,11 @@ const Media_offer_en = () => {
     return (
         <>
             <div>
-            <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full}>
+                <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id, index) => {
                         return (
                             <div key={index} className="items-img">
-                                <img src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="pictures" />
+                                <img className="zoom" src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}
@@ -45,11 +45,11 @@ const Media_offer_th = () => {
     return (
         <>
             <div>
-                <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full}>
+                <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id, index) => {
                         return (
                             <div key={index} className="items-img">
-                                <img src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="pictures" />
+                                <img className="zoom" src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}

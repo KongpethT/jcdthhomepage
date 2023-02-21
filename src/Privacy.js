@@ -26,11 +26,11 @@ const Internal = () => {
                 </nav>
             </div>
             <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
-                                <img src={`./image/PrivacyPolicyForInternalStakeholder/PrivacyPolicyForInternalStakeholder-${id}.png`} alt="pictures" />
+                                <img className="zoom" src={`./image/PrivacyPolicyForInternalStakeholder/PrivacyPolicyForInternalStakeholder-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}
@@ -63,11 +63,11 @@ const External = () => {
                 </nav>
             </div>
             <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
-                                <img src={`./image/PrivacyPolicyForExternalStakeholder/PrivacyPolicyForExternalStakeholder-${id}.png`} alt="pictures" />
+                                <img className="zoom" src={`./image/PrivacyPolicyForExternalStakeholder/PrivacyPolicyForExternalStakeholder-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}
@@ -101,11 +101,11 @@ const CCTV = () => {
             </div>
 
             <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
-                                <img src={`./image/CCTVPrivacyNotice/CCTVPrivacyNotice-${id}.png`} alt="pictures" />
+                                <img className="zoom" src={`./image/CCTVPrivacyNotice/CCTVPrivacyNotice-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}

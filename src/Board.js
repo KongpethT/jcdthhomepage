@@ -12,11 +12,11 @@ const Borad = () => {
     return (
         <>
             <div>
-                <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full}>
+                <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
                             <div key={id} className="items-img">
-                                <img src={`./image/board/board-${id}.png`} alt="pictures" />
+                                <img className="zoom" src={`./image/board/board-${id}.png`} alt="pictures" />
                             </div>
                         )
                     })}

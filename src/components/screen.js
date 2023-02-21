@@ -9,8 +9,25 @@ const Full_screen = () => {
     }
 }
 
+let is_zoom = false
+const Zoom = () => {
+    let zooms = document.querySelectorAll(".zoom")
+    if (is_zoom === false) {
+        is_zoom = true
+        for (let i = 0; i < zooms.length; i++) {
+            zooms[i].classList.add("zoom-in")
+        }
+    } else {
+        is_zoom = false
+        for (let i = 0; i < zooms.length; i++) {
+            zooms[i].classList.remove("zoom-in")
+        }
+    }
+}
+
 const screen = {
-    full: Full_screen
+    full: Full_screen,
+    zoom: Zoom
 }
 
 export { screen }
