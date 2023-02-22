@@ -11,32 +11,32 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 const App = () => {
   return (
     < >
-      <BrowserRouter>
-        <menu.top_bar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/board' element={<Board />} />
-          <Route path='/media offer th' element={<media.th />} />
-          <Route path='/media offer en' element={<media.eng />} />
-          <Route path='/pdpa-internal' element={<privacy.internal />} />
-          <Route path='/pdpa-external' element={<privacy.external />} />
-          <Route path='/pdpa-cctv' element={<privacy.cctv />} />
+        <BrowserRouter>
+          <menu.top_bar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/board' element={<Board />} />
+            <Route path='/media offer th' element={<media.th />} />
+            <Route path='/media offer en' element={<media.eng />} />
+            <Route path='/pdpa-internal' element={<privacy.internal />} />
+            <Route path='/pdpa-external' element={<privacy.external />} />
+            <Route path='/pdpa-cctv' element={<privacy.cctv />} />
 
 
-          {/**rounte external */}
-          <Route path='/timesheet' element={<Outsite link='https://10.180.0.12' />} />
-          <Route path='/forecast-monitoring' element={<Outsite link='https://10.180.0.12' />} />
-          <Route path='/bee' element={<Outsite link='https://bee.jcdecaux.com' />} />
-          <Route path='/leave' element={<Outsite link='https://jcdecaux.leaveonline.com' />} />
-          <Route path='/mfa' element={<Outsite link='https://aka.ms/mfasetup' />} />
-          <Route path='/help' element={<Outsite link='https://sgsin0ap0019:8080' />} />
-          <Route path='/qmail' element={<Outsite link='https://eu.quarantine.symantec.com' />} />
-          <Route path='/admin365' element={<Outsite link='https://outlook.office365.com/ecp' />} />
-          <Route path='/pdpa' element={<Outsite link='https://www.jcdecaux.co.th/pdpa-internal' />} />
-        </Routes>
-        <menu.bottom_bar />
-      </BrowserRouter>
+            {/**rounte external */}
+            <Route path='/timesheet' element={<Outsite link='https://10.180.0.12' />} />
+            <Route path='/forecast-monitoring' element={<Outsite link='https://10.180.0.12' />} />
+            <Route path='/bee' element={<Outsite link='https://bee.jcdecaux.com' />} />
+            <Route path='/leave' element={<Outsite link='https://jcdecaux.leaveonline.com' />} />
+            <Route path='/mfa' element={<Outsite link='https://aka.ms/mfasetup' />} />
+            <Route path='/help' element={<Outsite link='https://sgsin0ap0019:8080' />} />
+            <Route path='/qmail' element={<Outsite link='https://eu.quarantine.symantec.com' />} />
+            <Route path='/admin365' element={<Outsite link='https://outlook.office365.com/ecp' />} />
+            <Route path='/pdpa' element={<Outsite link='https://www.jcdecaux.co.th/pdpa-internal' />} />
+          </Routes>
+          <menu.bottom_bar />
+        </BrowserRouter>
     </>
   )
 }

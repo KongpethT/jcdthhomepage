@@ -58,16 +58,9 @@ const Footer = (props) => {
 
     return (
         <>
-            <div style={{ position: 'fixed', bottom: '0', width: '100%' }} className="footer" >
-                <div style={{ display: 'flex' }} >
-                    <p style={{ width: '50%', backgroundColor: '' }}>
-                        JCDecaux (Thailand) copyright© 2022
-                    </p>
-                    <p style={{ width: '50%', backgroundColor: '', textAlign: 'right' , marginRight: '25px'}}>
-                        <a className='text-light alink ' href='/pdpa-internal'>นโยบายข้อมูลส่วนบุคคล</a>
-                    </p>
-                </div>
-
+            <div className="footer" >
+                <p >JCDecaux (Thailand) copyright© 2022</p>
+                <p><a className='text-light alink ' href='/pdpa-internal'>นโยบายข้อมูลส่วนบุคคล</a></p>
             </div>
         </>
     )

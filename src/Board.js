@@ -11,8 +11,8 @@ const Borad = () => {
 
     return (
         <>
-            <div>
-                <div id="full_screen" style={{ height: screen_y - 200 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
+            <div className="container mb-2">
+                <div style={{marginBottom:"100px"}} id="full_screen" className="show-items" onDoubleClick={screen.full} >
                     {imgs.map((id) => {
                         return (
                             <div key={id} className="items-img">
@@ -20,6 +20,7 @@ const Borad = () => {
                             </div>
                         )
                     })}
+                    
                 </div>
             </div>
         </>

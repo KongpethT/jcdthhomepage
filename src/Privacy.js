@@ -26,7 +26,7 @@ const Internal = () => {
                 </nav>
             </div>
             <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
+                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
@@ -63,7 +63,7 @@ const External = () => {
                 </nav>
             </div>
             <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
+                <div id="full_screen" className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
@@ -101,7 +101,7 @@ const CCTV = () => {
             </div>
 
             <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full} onClick={screen.zoom}>
+                <div id="full_screen"  className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id) => {
                         return (
                             <div className="items-img">
