@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { screen } from "./components/screen";
 
 
@@ -9,17 +9,18 @@ const Media_offer_en = () => {
         imgs.push(i)
     }
 
-    const [screen_y, _screen_y] = useState(window.innerHeight)
+    /*const [screen_y, _screen_y] = useState(window.innerHeight)
     window.addEventListener('resize', () => {
         _screen_y(window.innerHeight)
-    })
+    })*/
 
     return (
         <>
-           <div className="container mb-2">
-                <div style={{marginBottom:"100px"}} id="full_screen" className="show-items" onDoubleClick={screen.full}>
+            <div className="show">
+                <div id="full_screen" className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id, index) => {
                         return (
+
                             <div key={index} className="items-img">
                                 <img className="zoom" src={`./image/mediaoffer/mediaoffer-${id}.png`} alt="pictures" />
                             </div>
@@ -36,16 +37,16 @@ const Media_offer_th = () => {
     for (let i = 1; i <= 92; i++) {
         imgs.push(i)
     }
-
-    const [screen_y, _screen_y] = useState(window.innerHeight)
-    window.addEventListener('resize', () => {
-        _screen_y(window.innerHeight)
-    })
-
+    /*
+        const [screen_y, _screen_y] = useState(window.innerHeight)
+        window.addEventListener('resize', () => {
+            _screen_y(window.innerHeight)
+        })
+    */
     return (
         <>
-           <div className="container mb-2">
-                <div style={{marginBottom:"100px"}} id="full_screen" className="show-items" onDoubleClick={screen.full}>
+            <div className="show">
+                <div id="full_screen" className="show-items" onDoubleClick={screen.full}>
                     {imgs.map((id, index) => {
                         return (
                             <div key={index} className="items-img">

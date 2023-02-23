@@ -59,8 +59,8 @@ const Footer = (props) => {
     return (
         <>
             <div className="footer" >
-                <p >JCDecaux (Thailand) copyright© 2022</p>
-                <p><a className='text-light alink ' href='/pdpa-internal'>นโยบายข้อมูลส่วนบุคคล</a></p>
+                <a className='text-light alink ' href='/'>JCDecaux (Thailand) copyright© 2022</a>
+                <a className='text-light alink ' href='/pdpa-internal'>นโยบายข้อมูลส่วนบุคคล</a>
             </div>
         </>
     )

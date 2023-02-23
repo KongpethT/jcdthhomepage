@@ -1,13 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 import { screen } from "./components/screen";
 
 const Internal = () => {
     let imgs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
-    const [screen_y, _screen_y] = useState(window.innerHeight)
-    window.addEventListener('resize', () => {
-        _screen_y(window.innerHeight)
-    })
-
+    /* const [screen_y, _screen_y] = useState(window.innerHeight)
+     window.addEventListener('resize', () => {
+         _screen_y(window.innerHeight)
+     })*/
 
     return (
         <>
@@ -25,11 +24,11 @@ const Internal = () => {
                     </div>
                 </nav>
             </div>
-            <div>
-                <div id="full_screen" style={{ height: screen_y - 250 }} className="show-items" onDoubleClick={screen.full}>
+            <div className="show">
+                <div id="full_screen" className="show-auto" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
-                            <div className="items-img">
+                            <div key={id} className="items-img">
                                 <img className="zoom" src={`./image/PrivacyPolicyForInternalStakeholder/PrivacyPolicyForInternalStakeholder-${id}.png`} alt="pictures" />
                             </div>
                         )
@@ -42,10 +41,10 @@ const Internal = () => {
 
 const External = () => {
     let imgs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
-    const [screen_y, _screen_y] = useState(window.innerHeight)
-    window.addEventListener('resize', () => {
-        _screen_y(window.innerHeight)
-    })
+    /* const [screen_y, _screen_y] = useState(window.innerHeight)
+     window.addEventListener('resize', () => {
+         _screen_y(window.innerHeight)
+     })*/
     return (
         <>
             <div className="container mb-2">
@@ -62,11 +61,12 @@ const External = () => {
                     </div>
                 </nav>
             </div>
-            <div>
-                <div id="full_screen" className="show-items" onDoubleClick={screen.full}>
+
+            <div className="show">
+                <div id="full_screen" className="show-auto" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
-                            <div className="items-img">
+                            <div key={id} className="items-img">
                                 <img className="zoom" src={`./image/PrivacyPolicyForExternalStakeholder/PrivacyPolicyForExternalStakeholder-${id}.png`} alt="pictures" />
                             </div>
                         )
@@ -79,10 +79,10 @@ const External = () => {
 
 const CCTV = () => {
     let imgs = ["1", "2", "3", "4", "5", "6", "7"]
-    const [screen_y, _screen_y] = useState(window.innerHeight)
-    window.addEventListener('resize', () => {
-        _screen_y(window.innerHeight)
-    })
+    /* const [screen_y, _screen_y] = useState(window.innerHeight)
+     window.addEventListener('resize', () => {
+         _screen_y(window.innerHeight)
+     })*/
     return (
         <>
             <div className="container mb-2">
@@ -100,11 +100,11 @@ const CCTV = () => {
                 </nav>
             </div>
 
-            <div>
-                <div id="full_screen"  className="show-items" onDoubleClick={screen.full}>
+            <div className="show">
+                <div id="full_screen" className="show-auto" onDoubleClick={screen.full} onClick={screen.zoom}>
                     {imgs.map((id) => {
                         return (
-                            <div className="items-img">
+                            <div key={id} className="items-img">
                                 <img className="zoom" src={`./image/CCTVPrivacyNotice/CCTVPrivacyNotice-${id}.png`} alt="pictures" />
                             </div>
                         )
