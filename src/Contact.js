@@ -46,7 +46,7 @@ const Contact = () => {
                     <div id="en" className="col-12 text-secondary mt-5">
                         <div className='px-5 py-5 language-en'>
                             <p className='fs-5'>
-                                3 Rajanakarn Building, 21st Floor, South Sathorn Road, Yannawa, Sathorn, Bangkok, Thailand 10120
+                                3 Rajanakarn Building, 11st Floor, South Sathorn Road, Yannawa, Sathorn, Bangkok, Thailand 10120
                                 <br />Tel: (+662) 676 7655-64, Fax:(+662) 676 7667
                             </p>
                             <p className="mx-5">
@@ -81,7 +81,7 @@ const Contact = () => {
                     <div id="th" className="col-12 text-secondary mt-5 hident">
                         <div className='px-5 py-5 language-th'>
                             <p className='fs-5'>
-                                เลขที่ 3 อาคารรัจนาการ ชั้น 21 ถนนสาทรใต้ แขวงยานนาวา เขตสาทร กรุงเทพฯ ประเทศไทย 10120
+                                เลขที่ 3 อาคารรัจนาการ ชั้น 11 ถนนสาทรใต้ แขวงยานนาวา เขตสาทร กรุงเทพฯ ประเทศไทย 10120
                                 <br />โทร: (+662) 676 7655-64, แฟกซ์:(+662) 676 7667
                             </p>
                             <p className='mx-5'>
