@@ -112,8 +112,9 @@ body {
     bottom: 0;
     color: var(--light);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     background-color: var(--dark);
+    height: 50px;
 }
 
 .page-footer a:hover {
@@ -121,9 +122,18 @@ body {
     outline: none;
 }
 
-.copyrighr,
-.prolicy {
+.copyright {
+    text-align: left;
+    padding-left: 10px;
     text-align: center;
+    align-self: center;
+}
+
+.prolicy {
+    text-align: right;
+    padding-right: 10px;
+    text-align: center;
+    align-self: center;
 }
 
 /* end footer */
@@ -235,7 +245,7 @@ body {
 }
 
 .contact .list-items .item-7 {
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 }
 
 .contact .list-items .item-3 a,
@@ -266,7 +276,7 @@ body {
 }
 
 .about .about-items .item {
-    margin: 10px auto;
+    margin: 0 auto;
     max-width: 90%;
     width: 100%;
     overflow: visible;
@@ -329,8 +339,9 @@ body {
 
 .documents .items img:nth-last-child(1) {
     border: 4px solid gold;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
+
 /* end Prolicy-page*/
 
 @media screen and (min-width: 720px) {
