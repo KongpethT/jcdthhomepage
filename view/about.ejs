@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCDecaux Thailand | About US</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+<body>
+    <div id="root" class="about">
+        <div id="about-items" class="about-items">
+
+            <!-- <div class="item">
+                <img src="./img/aboutUs/board-1.png" alt="about-picture">
+            </div>
+            <div class="item">
+                <img src="./img/aboutUs/board-1.png" alt="about-picture">
+            </div> -->
+        </div>
+    </div>
+
+    <script>
+        window.onload = () => {
+            const items = document.getElementById('about-items')
+            const num = 11
+            for (let i = 1; i <= num; i++) {
+                let item = document.createElement('div')
+                item.id = "div" + i
+                item.classList.add('item')
+
+                let img = document.createElement('img')
+                img.src = "/img/aboutUs/board-" + i + ".png"
+                img.id = 'image' + i
+
+                item.appendChild(img);
+                items.appendChild(item)
+            }
+
+            const lastBox = document.getElementById("div" + num)
+            lastBox.style.marginBottom = "30px"
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

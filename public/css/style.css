@@ -1,0 +1,422 @@
+:root {
+    --background: #0f2442;
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #0dcaf0;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Regular.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--background);
+
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* menu navigator */
+.display {
+    display: block;
+    width: 100dvw;
+    list-style: none;
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    filter: opacity(0.9);
+    background-color: gray;
+
+}
+
+.display a {
+    border-bottom: 1px solid var(--background);
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: var(--light);
+    z-index: 1;
+    display: grid;
+    /* grid-template-columns: 300px 1fr; */
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .berger {
+    font-size: 45px;
+
+}
+
+.logo .berger:hover {
+    cursor: pointer;
+    filter: opacity(0.7);
+}
+
+
+.navbar ul li p {
+    text-align: center;
+}
+
+.navbar ul a,
+.page-footer a {
+    text-decoration: none;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.navbar ul a:hover {
+    filter: opacity(0.7);
+    border-bottom: 1px solid var(--light);
+    outline: none;
+}
+
+/* end navbar navigetor */
+
+/* footer */
+.page-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: var(--light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--dark);
+}
+
+.page-footer a:hover {
+    filter: opacity(0.7);
+    outline: none;
+}
+
+.copyrighr,
+.prolicy {
+    text-align: center;
+}
+
+/* end footer */
+
+/* home-page */
+.screen-center {
+    background-color: var(--background);
+    max-width: 1080px;
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-contener-home {
+    display: grid;
+    grid-template-columns: minmax(auto, 280px) minmax(184px, auto) minmax(auto, 280px);
+    grid-template-rows: 240px 240px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "page1 video page3"
+        "page2 video page4";
+}
+
+.grid-contener-home .items {
+    background-color: var(--background);
+    padding: 10px;
+
+}
+
+.grid-contener-home .items img {
+    width: 100%;
+    max-width: 262px;
+    height: auto;
+}
+
+.grid-contener-home .item-1 {
+    grid-area: page1;
+    align-self: flex-end;
+}
+
+.grid-contener-home .item-2 {
+    grid-area: page2;
+    align-self: flex-start;
+}
+
+.grid-contener-home .item-3 {
+    grid-area: page3;
+    align-self: flex-end;
+}
+
+.grid-contener-home .item-4 {
+    align-self: flex-start;
+}
+
+.grid-contener-home .item-5 {
+    grid-area: video;
+}
+
+/* end home-page */
+
+/* contact-page*/
+.contact {
+    position: absolute;
+    top: 200px;
+    color: var(--light);
+    width: 100dvw;
+}
+
+.contact .list-items {
+    margin: 0 auto;
+    width: 85%;
+
+    display: grid;
+    grid-template-rows: repeat(500px);
+}
+
+.contact .list-items .item {
+    margin-bottom: 2px;
+    padding: 14px;
+}
+
+.contact .list-items .item-1 {
+    background-color: #6c757d;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+
+    border-radius: 10px;
+}
+
+.contact .list-items .item-1 a {
+    text-decoration: none;
+    color: var(--background);
+}
+
+.contact .list-items .item-3,
+.contact .list-items .item-4,
+.contact .list-items .item-5,
+.contact .list-items .item-6,
+.contact .list-items .item-7 {
+    font-size: medium;
+    padding-left: 30px;
+}
+
+.contact .list-items .item-7 {
+    margin-bottom: 5%;
+}
+
+.contact .list-items .item-3 a,
+.contact .list-items .item-4 a,
+.contact .list-items .item-5 a,
+.contact .list-items .item-6 a,
+.contact .list-items .item-7 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.lang:hover {
+    cursor: pointer;
+    color: var(--background);
+}
+
+/* end contact-page*/
+
+/* about us-page */
+.about {
+    margin-top: 200px;
+    color: #f8f9fa;
+}
+
+.about .about-items {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.about .about-items .item {
+    margin: 10px auto;
+    max-width: 90%;
+    width: 100%;
+    overflow: visible;
+}
+
+.about .about-items .item img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* Prolicy-page */
+.policy-menu {
+    color: var(--light);
+    margin-top: 200px;
+    display: grid;
+    grid-template-rows: 30px auto;
+}
+
+.policy-menu .items {
+    margin-left: 20px;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    filter: opacity(0.5);
+}
+
+.policy-menu .item-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.policy-menu .item-2 button {
+    margin: 0 5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+}
+
+.documents {
+    margin-top: 50px;
+}
+
+.documents .items {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    align-self: center;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2px;
+}
+
+.documents .items img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.documents .items img:nth-last-child(1) {
+    border: 4px solid gold;
+    margin-bottom: 30px;
+}
+/* end Prolicy-page*/
+
+@media screen and (min-width: 720px) {
+
+    .logo .berger {
+        display: none;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .display {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: right;
+        width: 100dvw;
+        padding-right: 20px;
+        background-color: transparent;
+        filter: opacity(1);
+        grid-column-gap: 20px;
+    }
+
+    .contact .list-items .item-3,
+    .contact .list-items .item-4,
+    .contact .list-items .item-5,
+    .contact .list-items .item-6,
+    .contact .list-items .item-7 {
+        padding-bottom: 10px;
+    }
+
+    .contact .list-items .item-1 {
+        grid-template-columns: 200px auto;
+    }
+
+    .documents .items {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 920px) {
+
+    .navbar {
+        grid-template-columns: 300px 1fr;
+    }
+
+    .logo .berger {
+        display: none;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .display {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: right;
+        width: auto;
+        padding-right: 0px;
+        background-color: transparent;
+        filter: opacity(1);
+        grid-column-gap: 20px;
+    }
+
+    .contact .list-items .item-3,
+    .contact .list-items .item-4,
+    .contact .list-items .item-5,
+    .contact .list-items .item-6,
+    .contact .list-items .item-7 {
+        padding-bottom: 0px;
+    }
+
+    .contact .list-items .item-1 {
+        grid-template-columns: 300px auto;
+    }
+
+    .policy-menu {
+        color: var(--light);
+        grid-template-columns: 300px auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .documents .items {
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+}
