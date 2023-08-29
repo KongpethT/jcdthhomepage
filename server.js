@@ -5,11 +5,12 @@ const pem = require("pem")
 const http = require('http');
 const app = express()
 
-let port_ssl = 1244
 
-if (process.env.NODE_ENV === 'development') {
-    port_ssl = 443
+var options = {
+    pfx: fs.readFileSync('public/ssl/jcdecaux.co.th.pfx'),
+    passphrase: 'admin123'
 }
+
 
 
 //http non security web site
@@ -22,10 +23,11 @@ http.createServer(app).listen(80, () => {
 https.createServer({
     key: fs.readFileSync('public/ssl/jcdecaux.co.th_key.key'),
     cert: fs.readFileSync('public/ssl/jcdecaux.co.th_crt.crt'),
-}, app).listen(port_ssl, () => {
-    console.log("Express TTP server listening on port " + port_ssl);
-    console.log('server is runing at https://localhost:' + port_ssl)
-})
+}, app).listen(12443
+    , () => {
+        console.log("Express TTP server listening on port 12443");
+        console.log('server is runing at https://localhost')
+    })
 
 
 
