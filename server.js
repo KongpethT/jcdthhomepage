@@ -26,7 +26,7 @@ https.createServer({
 }, app).listen(12443
     , () => {
         console.log("Express TTP server listening on port 12443");
-        console.log('server is runing at https://localhost')
+        console.log('server is runing at https://localhost:12443')
     })
 
 
