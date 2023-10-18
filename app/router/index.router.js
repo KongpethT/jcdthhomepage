@@ -13,4 +13,6 @@ module.exports = (app) => {
     app.get('/admin365', (req, res) => { res.redirect('https://outlook.office365.com/ecp') })
     app.get('/email/junk', (req, res) => { res.redirect('https://eu.quarantine.symantec.com') })
     app.get('/helpdesk', (req, res) => { res.redirect('https://sgsin0ap0019:8080') })
+    app.get('/accpac',(req,res)=>{res.redirect('https://thbkk0ap0001.asia.jcdecaux.org/RDWeb')})
+    app.get('/pdpa-internal', (req, res) => { res.redirect('https://www.jcdecaux.co.th/policy/internal') })
 }
